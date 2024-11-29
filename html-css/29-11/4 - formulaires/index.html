@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="get" action="#">
+        <fieldset>
+            <legend> Donne-moi tes données 🗂️ </legend>
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" name="Prénom" placeholder="Entrez un prénom" minlength="2" maxlength="20" id="prenom">
+            <label for="nom">Nom:</label>
+            <input type="text" name="Nom" placeholder="Entrez un nom" minlength="2" maxlength="20" id="nom">
+            <label for="email">E-mail:</label>
+            <input type="email" name="E-mail" placeholder="Entrez un e-mail" id="email">
+            <label for="tel">Téléphone:</label>
+            <input type="tel" name="Téléphone" placeholder="Entrez un numéro de téléphone" id="tel">
+            <label for="age">Age:</label>
+            <input type="number" name="Age" placeholder="Ton age" id="age" value="18">
+            <label for="mdp">Mot de Passe:</label>
+            <input type="password" name="Mot de Passe" placeholder="Mot de passe" minlength="8" maxlength="30" id="mdp">
+            <label for="comment">Mot de Passe:</label>
+            <textarea name="Commentaire" id="comment" rows="10" placeholder="Vas y, ouvre ton coeur"></textarea>
+            <label for="date">Date du commentaire:</label>
+            <input type="date" name="Date" id="date">
+            <label for="televerser">Upload ton fichier:</label>
+            <input type="file" name="Upload" id="televerser" accept=".jpeg, .jpg, .png, .gif, .webp" multiple>
+        </fieldset>
+        <fieldset class="flex2">
+            <legend> Cette partie n'est que pour toi ❤️</legend>
+
+            <div>
+                <p>Je mange :</p>
+                <label for="checkbox">🍗 Du poulet</label>
+                <input type="checkbox" name="Checkbox" id="checkbox"><br>
+                <label for="checkbox2">🐟 Du poisson</label>
+                <input type="checkbox" name="Checkbox" id="checkbox2"><br>
+                <label for="checkbox3">🥩 Du stake saignant</label>
+                <input type="checkbox" name="Checkbox" id="checkbox3" checked><br>
+                <label for="checkbox4">🥗 De la salade</label>
+                <input type="checkbox" name="Checkbox" id="checkbox4">
+            </div>
+
+        </fieldset>
+        <fieldset class="flex2">
+            <legend>Et ta vie personnelle 🤖</legend>
+            <p>Ça va?</p>
+            <input type="radio" name="radio" id="radio1" checked><label for="radio1">Non</label><br>  
+            <input type="radio" name="radio" id="radio2"><label for="radio2">Oui</label><br>
+            <input type="radio" name="radio" id="radio3"><label for="radio3">Je sais pas...</label><br>
+            <input type="radio" name="radio" id="radio4"><label for="radio4">Ça ne te 
+            </fieldset>
+            <fieldset class="flex2">
+                <legend>Et ta journée 👾</legend>
+                <label for="liste">Quel est ton artiste préféré?</label><br><br>
+                <select name="liste" id="liste">
+                    <optgroup>Vai jão</optgroup>
+                    <option value="Jul">Jul</option>
+                    <option value="Jul">Futur Denver</option>
+                    <optgroup label="Team Oula">Vai jãozim</optgroup>
+                    <option value="Jul">Burzum</option>
+                    <option value="Jul">Molejo</option>
+                </select><br><br>
+                <div class="range">
+                    <label for="range">Une note sur 10 pour moi?</label><br>
+                    <label for="minValue">0</label>
+                    <input type="range" min="0" max="10" step="1" id="range">
+                    <label for="maxValue">10</label>
+                </div>
+        </fieldset>
+
+        <button type="submit">ENVOYER</button>
+        <button class="reset" type="reset">Reset</button>
+
+    </form>
+</body>
+</html>

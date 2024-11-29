@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(desert.jpg);
+    background-size: cover;
+}
+
+table {
+    margin-bottom: 100px;
+    margin: 50px;
+    background-color: rgba(0, 255, 255, 0);
+    margin: 200px auto;
+    border-spacing: 5px;
+}
+
+table caption {
+    color: #F6BC8C;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px;
+}
+
+td,th  {
+    background-color: #F6BC8C;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+thead td {
+    background-color: #C87D54;
+    font-weight: 600;
+}
+
+td:hover {
+    background-color: #D0B7AC;
+}
