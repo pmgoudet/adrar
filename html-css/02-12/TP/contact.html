@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Metal - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="banner.png" alt="banner">
+        <h1>Il n'y a pas de salut</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallerie.html">Gallerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="fictif.php">
+            <fieldset>
+                <legend>Ton âme nous intéresse 👻</legend>
+                <div class="div-form">
+                    <label for="nom" class="required">Nom :</label>
+                    <input type="text" minlength="2" maxlength="20" placeholder="Quel est votre nom ?" id="nom" required>
+                </div>
+                <div class="div-form">
+                    <label for="email" class="required">E-mail :</label>
+                    <input type="email" name="email" id="email" placeholder="Quel est votre adresse mail ?" required>
+                </div>
+                <div class="div-form">
+                    <label for="comment">Laissez un commentaire :  <br></label>
+                    <textarea name="commentaire" id="comment" rows="10" cols="70" placeholder="Ouvre ton cœur sombre et mélancolique..."></textarea>
+                </div>
+                <div class="div-form">
+                    <label for="copie">Je veux une copie par e-mail</label>
+                    <input type="checkbox" id="copie" checked>
+                </div>
+                <div class="div-form">
+                    <button type="r eset" id="reset">Effacer</button>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.blacforjemagazine.com/" target="_blank">Blac Forje Magazine</a>
+            </li>
+            <li>
+                <a href="https://blackmetalterror.com/"  target="_blank">Black Metal Terror</a>
+            </li>
+            <li>
+                <a href="https://blackmetalstore.com/"  target="_blank">Black Metal Store</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

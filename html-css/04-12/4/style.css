@@ -1,0 +1,19 @@
+div {
+    margin-top: 200px;
+    text-align: center;
+}
+
+img {
+    width: 600px;
+    height: 600px;
+    transition: 1s;
+    border-radius: 5000000px;
+}
+
+img:hover {
+    transform: scale(2);
+}
+
+img:active {
+    transform: rotate(181deg);
+}

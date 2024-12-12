@@ -1,0 +1,39 @@
+h1 {
+    color: brown;
+    transition: 1s;
+}
+
+h1:hover {
+    color: green;
+}
+
+p:active {
+    transform: rotate(2turn);
+    transition: 1s ease-in-out;
+}
+
+img {
+    transform: rotate(90deg);
+}
+
+img:hover {
+    transform: scale(0.5);
+    transition: 1s cubic-bezier(0.9, -1.05, 0.95, -0.95);
+}
+
+@keyframes animation1 {
+    0% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(45deg) translateX(50px);
+    }
+    100% {
+        transform: scale(0.6) rotate(135deg);
+    }
+}
+
+.btn1:hover {
+    animation: animation1 2s;
+}
+

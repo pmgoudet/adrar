@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header, footer {
+    width: 100vw;
+    background-color: #008F3E;
+    color: #F7C500;
+    text-align: center;
+}
+
+.h1 {
+    font-weight: 600;
+}
+
+.banner {
+    width: 100vw;
+    height: 300px;
+    background-image: url(penta.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    justify-content: center;
+    margin: 50px 0;
+    display: grid;
+    grid-template: 1fr 1fr / 35vw 35vw ;
+    gap: 50px;
+}
+
+article {
+    border: 2px solid #008F3E;
+    padding: 20px;
+}
+
+article img {
+    width: 100%;
+}
+
+footer {
+    height: 50px;
+}
+
+
+
+@media (max-width: 1060px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+}
