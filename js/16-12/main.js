@@ -158,14 +158,15 @@
 
 console.log('Exo9');
 
-let notes = [10,20,20,10];
+let notes = [10,20,20,10,14,11,20,19];
 
 function moyenne(array) {
     let note = 0;
     for (i=0; i<array.length; i++) {
         note += array[i];
     }
-    return note / array.length
+    note = note / array.length;
+    return note.toFixed(1);
 }
 
 console.log(moyenne(notes));
