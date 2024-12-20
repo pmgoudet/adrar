@@ -156,17 +156,53 @@
 
 // Ex 9
 
-console.log('Exo9');
+// console.log('Exo9');
 
-let notes = [10,20,20,10,14,11,20,19];
+// let notes = [10,20,20,10,14,11,20,19];
 
-function moyenne(array) {
-    let note = 0;
-    for (i=0; i<array.length; i++) {
-        note += array[i];
-    }
-    note = note / array.length;
-    return note.toFixed(1);
+// function moyenne(array) {
+//     let note = 0;
+//     for (i=0; i<array.length; i++) {
+//         note += array[i];
+//     }
+//     note = note / array.length;
+//     return note.toFixed(1);
+// }
+
+// console.log(moyenne(notes));
+
+
+// Ex 10
+
+
+// console.log('Exo10');
+
+// let equipe = "Corinthians";
+// let adversaire = "Chelsea";
+// let jogador = "Guerrero";
+
+// console.log(`l'équipe ${equipe} a défoncé le petit ${adversaire} en 2012 avec le but de ${jogador}. Champions du monde, enfin.`)
+
+
+
+// Ex 11
+
+console.log('Exo11');
+
+let btnArrow = document.querySelector('.arrow')
+let btnAnonyme = document.querySelector('.anon')
+let btnNormale = document.querySelector('.norm')
+
+btnArrow.addEventListener('click', () => {
+    console.log("C'est une arrow function");
+})
+
+btnAnonyme.addEventListener('click', function() {
+    console.log("C'est une fonction anonyme");
+})
+
+btnNormale.addEventListener('click', fonctionNormale);
+
+function fonctionNormale() {
+    console.log("C'est une fonction normale");
 }
-
-console.log(moyenne(notes));
